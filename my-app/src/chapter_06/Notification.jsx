@@ -18,6 +18,7 @@ const styles = {
 class Notification extends React.Component{
     constructor(props){
         super(props);
+
         this.state = {};
     }
 
@@ -30,7 +31,7 @@ class Notification extends React.Component{
     }
 
     componentWillUnmount(){
-        console.log(`${this.props.id}componentWillUnmount() called.`)
+        console.log(`${this.props.id} componentWillUnmount() called.`)
     }
 
 
