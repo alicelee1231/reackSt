@@ -31,7 +31,18 @@ function Accommodate(props){
             <button onClick={increaseCount} disabled = {isFull}>
                 enter
             </button>
-            <button onClick={() => {if(count > 0) decreaseCount()}}> out </button>
+            {/* arrow function 쓰면 this,class 를 쓰는게 더 나음 */}
+            {/* 그 이유는 arrow function쓰면 랜더링이 또 일어나서 성능적으로 좋지 않음 */}
+            {/* arrow function is not good for using because it can be inpact performace.
+            like when it can re-render once again.
+              */}
+            
+            {/* <button onClick={() => {if(count > 0) decreaseCount()}}> out </button> */}
+            
+            {/* So I revised the code like below */}
+            {count > 0 &&
+                <button onClick={decreaseCount}> over </button>
+            }
             {isFull && <p style={{color : "red"}}>already fulled</p>}
 
         </div>
