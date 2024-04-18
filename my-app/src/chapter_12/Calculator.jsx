@@ -31,6 +31,7 @@ function Calculator(props){
     const[temperature, setTemperature] = useState("");
     const [scale, setScale] = useState("c");
 
+
     const handleCelsiusChange = (temperature) => {
         setTemperature(temperature);
         setScale("c");
@@ -62,5 +63,7 @@ function Calculator(props){
         </div>
     );
 }
+
+//component를 내보내겠다는 뜻
 
 export default Calculator;

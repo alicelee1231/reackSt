@@ -4,7 +4,8 @@ import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import TemperatureInput from './chapter_12/Temperature';
-import Calculator from './chapter_12/Calculator';
+// import Calculator from './chapter_12/Calculator';
+import ProfileCard from './chpater_13/ProfileCard';
 // import NotificationList from './chapter_06/NotificationList';
 // import ConfirmButton from './chapter_08/ConfirmButton';
 // import Accommodate from './chapter_07/Accommodate';
@@ -21,7 +22,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
  
   root.render(
     <React.StrictMode>
-      <Calculator/>
+      <ProfileCard/>
     </React.StrictMode>
   );
 
